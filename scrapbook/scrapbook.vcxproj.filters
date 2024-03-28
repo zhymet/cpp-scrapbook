@@ -54,6 +54,9 @@
     <ClCompile Include="core_app_fw_wip1\coreappstuff\coreappstuff\gtl\core\time.cpp">
       <Filter>Header Files\coreappstuff</Filter>
     </ClCompile>
+    <ClCompile Include="identifier_and_type_map.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="hetero_method_map.h">
@@ -246,6 +249,15 @@
       <Filter>Header Files\coreappstuff</Filter>
     </ClInclude>
     <ClInclude Include="efficient_type_erasure.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="embedded_lang_transpilation_attempt.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="meta_tuple.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="type_erasure_example.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

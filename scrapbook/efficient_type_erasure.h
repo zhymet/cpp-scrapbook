@@ -89,12 +89,6 @@ void add_literal(T& t, meta_literal_variant_t i) = delete;
 struct Base;  // Forward declaration, Must be defined after the deleted template
               // methods.
 
-template <>  // <@gmethod: cp_string>
-std::string cp_string(const Base& obj);
-
-template <>  // <@gmethod: add_int>
-void add_literal(Base& obj, meta_literal_variant_t i);
-
 struct Base {
   // NOTE: Definition of the explicit specialization has to appear separately
   // later outside of class `Base`, otherwise it results in error such as:

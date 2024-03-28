@@ -138,6 +138,7 @@
     <ClCompile Include="core_app_fw_wip1\core_app_framework_wip\gla.cpp" />
     <ClCompile Include="core_app_fw_wip1\core_app_framework_wip\main.cpp" />
     <ClCompile Include="core_app_fw_wip1\core_app_framework_wip\scrapbook.cpp" />
+    <ClCompile Include="identifier_and_type_map.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -198,13 +199,16 @@
     <ClInclude Include="core_app_fw_wip1\core_app_framework_wip\vec2.hpp" />
     <ClInclude Include="ct_value_list.h" />
     <ClInclude Include="efficient_type_erasure.h" />
+    <ClInclude Include="embedded_lang_transpilation_attempt.hpp" />
     <ClInclude Include="generic_vec2.h" />
     <ClInclude Include="hetero_method_map.h" />
     <ClInclude Include="is_approx.h" />
     <ClInclude Include="is_template_of.h" />
+    <ClInclude Include="meta_tuple.hpp" />
     <ClInclude Include="mimic_meta_obj_unique_type.h" />
     <ClInclude Include="random_exp_generator.h" />
     <ClInclude Include="template_mp_book_notes.h" />
+    <ClInclude Include="type_erasure_example.hpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="candi_first_lang_concept\hundred_doors.candil" />
