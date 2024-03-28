@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{3ec1c1d9-4f69-4d12-b42e-94d0255c2cd8}</ProjectGuid>
+    <RootNamespace>scrapbook</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="candi_first_lang_concept\test.cpp" />
+    <ClCompile Include="core_app_fw_wip1\coreappstuff\coreappstuff\caf\core\Context.cpp" />
+    <ClCompile Include="core_app_fw_wip1\coreappstuff\coreappstuff\caf\core\Engine.cpp" />
+    <ClCompile Include="core_app_fw_wip1\coreappstuff\coreappstuff\gla\core\glaMonitor.cpp" />
+    <ClCompile Include="core_app_fw_wip1\coreappstuff\coreappstuff\gtl\core\time.cpp" />
+    <ClCompile Include="core_app_fw_wip1\coreappstuff\coreappstuff\gtl\gfx\color.cpp" />
+    <ClCompile Include="core_app_fw_wip1\core_app_framework_wip\gla.cpp" />
+    <ClCompile Include="core_app_fw_wip1\core_app_framework_wip\main.cpp" />
+    <ClCompile Include="core_app_fw_wip1\core_app_framework_wip\scrapbook.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="any_of_element.h" />
+    <ClInclude Include="apply_callable_to_tuple.h" />
+    <ClInclude Include="candi_first_lang_concept\candil.hpp" />
+    <ClInclude Include="candi_first_lang_concept\candil_main.hpp" />
+    <ClInclude Include="candi_first_lang_concept\constants.hpp" />
+    <ClInclude Include="candi_first_lang_concept\phase1.hpp" />
+    <ClInclude Include="candi_first_lang_concept\phase2.hpp" />
+    <ClInclude Include="common_concepts.h" />
+    <ClInclude Include="core_app_fw_wip1\coreappstuff\coreappstuff\caf\caf.hpp" />
+    <ClInclude Include="core_app_fw_wip1\coreappstuff\coreappstuff\caf\core\Code.hpp" />
+    <ClInclude Include="core_app_fw_wip1\coreappstuff\coreappstuff\caf\core\Context.hpp" />
+    <ClInclude Include="core_app_fw_wip1\coreappstuff\coreappstuff\caf\core\Engine.hpp" />
+    <ClInclude Include="core_app_fw_wip1\coreappstuff\coreappstuff\caf\external.hpp" />
+    <ClInclude Include="core_app_fw_wip1\coreappstuff\coreappstuff\gla.hpp" />
+    <ClInclude Include="core_app_fw_wip1\coreappstuff\coreappstuff\glaContext.hpp" />
+    <ClInclude Include="core_app_fw_wip1\coreappstuff\coreappstuff\glaMonitor.hpp" />
+    <ClInclude Include="core_app_fw_wip1\coreappstuff\coreappstuff\gla\core\glaContext.hpp" />
+    <ClInclude Include="core_app_fw_wip1\coreappstuff\coreappstuff\gla\core\glaMonitor.hpp" />
+    <ClInclude Include="core_app_fw_wip1\coreappstuff\coreappstuff\gla\core\glfwError.hpp" />
+    <ClInclude Include="core_app_fw_wip1\coreappstuff\coreappstuff\gla\core\glfwInit.hpp" />
+    <ClInclude Include="core_app_fw_wip1\coreappstuff\coreappstuff\gla\core\wgl.hpp" />
+    <ClInclude Include="core_app_fw_wip1\coreappstuff\coreappstuff\gla\core\wglfw.hpp" />
+    <ClInclude Include="core_app_fw_wip1\coreappstuff\coreappstuff\gla\gla.hpp" />
+    <ClInclude Include="core_app_fw_wip1\coreappstuff\coreappstuff\glfwError.hpp" />
+    <ClInclude Include="core_app_fw_wip1\coreappstuff\coreappstuff\glfwInit.hpp" />
+    <ClInclude Include="core_app_fw_wip1\coreappstuff\coreappstuff\gtl\core\fmath.hpp" />
+    <ClInclude Include="core_app_fw_wip1\coreappstuff\coreappstuff\gtl\core\looper.hpp" />
+    <ClInclude Include="core_app_fw_wip1\coreappstuff\coreappstuff\gtl\core\requires.hpp" />
+    <ClInclude Include="core_app_fw_wip1\coreappstuff\coreappstuff\gtl\core\shortcuts.hpp" />
+    <ClInclude Include="core_app_fw_wip1\coreappstuff\coreappstuff\gtl\core\time.hpp" />
+    <ClInclude Include="core_app_fw_wip1\coreappstuff\coreappstuff\gtl\gfx\color.hpp" />
+    <ClInclude Include="core_app_fw_wip1\coreappstuff\coreappstuff\gtl\gfx\matrix.hpp" />
+    <ClInclude Include="core_app_fw_wip1\coreappstuff\coreappstuff\gtl\gfx\transform2.hpp" />
+    <ClInclude Include="core_app_fw_wip1\coreappstuff\coreappstuff\gtl\gfx\vec2.hpp" />
+    <ClInclude Include="core_app_fw_wip1\coreappstuff\coreappstuff\gtl\gfx\vec3.hpp" />
+    <ClInclude Include="core_app_fw_wip1\coreappstuff\coreappstuff\vertux\vertux.hpp" />
+    <ClInclude Include="core_app_fw_wip1\coreappstuff\coreappstuff\wglfw.hpp" />
+    <ClInclude Include="core_app_fw_wip1\core_app_framework_wip\caf.hpp" />
+    <ClInclude Include="core_app_fw_wip1\core_app_framework_wip\caf_debug.hpp" />
+    <ClInclude Include="core_app_fw_wip1\core_app_framework_wip\caf_resource_manager.hpp" />
+    <ClInclude Include="core_app_fw_wip1\core_app_framework_wip\caf_sprite.hpp" />
+    <ClInclude Include="core_app_fw_wip1\core_app_framework_wip\external.hpp" />
+    <ClInclude Include="core_app_fw_wip1\core_app_framework_wip\fmath.hpp" />
+    <ClInclude Include="core_app_fw_wip1\core_app_framework_wip\gla.hpp" />
+    <ClInclude Include="core_app_fw_wip1\core_app_framework_wip\gla_event.hpp" />
+    <ClInclude Include="core_app_fw_wip1\core_app_framework_wip\gla_globject.hpp" />
+    <ClInclude Include="core_app_fw_wip1\core_app_framework_wip\looper.hpp" />
+    <ClInclude Include="core_app_fw_wip1\core_app_framework_wip\old_main.hpp" />
+    <ClInclude Include="core_app_fw_wip1\core_app_framework_wip\requires.hpp" />
+    <ClInclude Include="core_app_fw_wip1\core_app_framework_wip\ResourceManager.hpp" />
+    <ClInclude Include="core_app_fw_wip1\core_app_framework_wip\shortcuts.hpp" />
+    <ClInclude Include="core_app_fw_wip1\core_app_framework_wip\stb_image.h" />
+    <ClInclude Include="core_app_fw_wip1\core_app_framework_wip\timer.hpp" />
+    <ClInclude Include="core_app_fw_wip1\core_app_framework_wip\transform2.h" />
+    <ClInclude Include="core_app_fw_wip1\core_app_framework_wip\vec2.hpp" />
+    <ClInclude Include="ct_value_list.h" />
+    <ClInclude Include="generic_vec2.h" />
+    <ClInclude Include="hetero_method_map.h" />
+    <ClInclude Include="is_approx.h" />
+    <ClInclude Include="is_template_of.h" />
+    <ClInclude Include="mimic_meta_obj_unique_type.h" />
+    <ClInclude Include="random_exp_generator.h" />
+    <ClInclude Include="template_mp_book_notes.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="candi_first_lang_concept\hundred_doors.candil" />
+    <None Include="core_app_fw_wip1\core_app_framework_wip\imgui.ini" />
+    <None Include="core_app_fw_wip1\core_app_framework_wip\primitive.frag" />
+    <None Include="core_app_fw_wip1\core_app_framework_wip\primitive.vert" />
+    <None Include="core_app_fw_wip1\core_app_framework_wip\Project1.vcxproj" />
+    <None Include="core_app_fw_wip1\core_app_framework_wip\Project1.vcxproj.filters" />
+    <None Include="core_app_fw_wip1\core_app_framework_wip\Project1.vcxproj.user" />
+    <None Include="core_app_fw_wip1\core_app_framework_wip\text.frag" />
+    <None Include="core_app_fw_wip1\core_app_framework_wip\text.vert" />
+    <None Include="core_app_fw_wip1\core_app_framework_wip\vertux.frag" />
+    <None Include="core_app_fw_wip1\core_app_framework_wip\vertux.vert" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="core_app_fw_wip1\core_app_framework_wip\Arial.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="core_app_fw_wip1\core_app_framework_wip\container.jpg" />
+    <Image Include="core_app_fw_wip1\core_app_framework_wip\rollo.png" />
+    <Image Include="core_app_fw_wip1\core_app_framework_wip\rollohead.png" />
+    <Image Include="core_app_fw_wip1\core_app_framework_wip\wall.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="core_app_fw_wip1\core_app_framework_wip\debug_info.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

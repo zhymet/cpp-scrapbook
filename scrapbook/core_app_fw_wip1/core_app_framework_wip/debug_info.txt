@@ -1,0 +1,1 @@
+2023-12-17 22:16:30.1442665 EST [C:\Programming\Repository\CoreApplicationFramework\Project1\caf_debug.hpp:47] Hello this a DEBUG message called from test_gla_basic. Hi, How are you ?
