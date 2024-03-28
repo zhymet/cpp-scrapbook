@@ -245,6 +245,9 @@
     <ClInclude Include="core_app_fw_wip1\coreappstuff\coreappstuff\gtl\core\time.hpp">
       <Filter>Header Files\coreappstuff</Filter>
     </ClInclude>
+    <ClInclude Include="efficient_type_erasure.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="candi_first_lang_concept\hundred_doors.candil">

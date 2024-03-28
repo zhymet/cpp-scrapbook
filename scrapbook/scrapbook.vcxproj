@@ -197,6 +197,7 @@
     <ClInclude Include="core_app_fw_wip1\core_app_framework_wip\transform2.h" />
     <ClInclude Include="core_app_fw_wip1\core_app_framework_wip\vec2.hpp" />
     <ClInclude Include="ct_value_list.h" />
+    <ClInclude Include="efficient_type_erasure.h" />
     <ClInclude Include="generic_vec2.h" />
     <ClInclude Include="hetero_method_map.h" />
     <ClInclude Include="is_approx.h" />
