@@ -260,6 +260,12 @@
     <ClInclude Include="type_erasure_example.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="any_type_ptr.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="start_of_cpp_transpiler.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="candi_first_lang_concept\hundred_doors.candil">

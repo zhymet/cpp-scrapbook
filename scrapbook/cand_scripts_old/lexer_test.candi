@@ -1,0 +1,124 @@
+// This is not a valid Candil program, this should only pass the tokenization stage of the compiler.
+// Candil Grammar Test [ This is a single line comment ] 
+/// String Literal [ This is a multiline comment] 
+///
+// Literals
+'kgfjhgjhgjkhgjk'
+'oogabooga\'aaaaa' // This should be 1 single string literal token.
+1234
+1234.5678
+thisisan_identifier
+
+// Directives
+//#thisiadirective this should fail.
+#enter
+#start
+#type
+#var
+#class
+#print
+#func
+
+#public
+#const
+#static
+#ref
+
+#if
+#else
+#elif
+#while
+#for
+#switch
+#case
+#default
+#break
+#continue
+#return
+#into
+
+// Candi Special Objects
+&type
+&value
+&int[RANGE[-inf-inf]]
+&uint[RANGE[0-inf]]
+&real[RANGE[-inf-inf]]
+&ureal[RANGE[0-inf]]
+&octet[RANGE[0-255]]
+&bit[RANGE[0-1]]
+&array[&type,&uint] // T is a type
+&pointer[&type] // T is a type
+&memory[&type,&uint] // T is a type
+&function 
+
+// Basic Expressions
+a.b // Member access
+a...b // Range/Elipsis
+
+//Statements in C& end with a semicolon
+#var a = b;
+
+// Equations
+a = b
+a += b
+a -= b
+a *= b
+a /= b
+a %= b
+a &= b
+a |= b
+a ^= b
+a <<= b
+a >>= b
+++a
+--a
+a + b
+a - b
+a * b
+a / b
+a % b
+~a
+a & b
+a | b
+a ^ b
+a << b
+a >> b
+!a
+a && b
+a || b
+a == b
+a != b
+a < b
+a > b
+a <= b
+a >= b
+a <=> b
+
+// Scopes
+(a)
+[b]
+{c}
+
+// Unkown tokens should be an error with the correct line and col.
+//abcd: // Syntax errors are reported upon lexing : is not a valid token.
+
+
+// This is the minimal Candil program
+// Defines the compiled program body using the #enter directive	
+// Defines the interpreted program body using the #start directive
+#enter()()
+#start()()
+
+// This is a Candil program that prints 'Hello, World!' at runtime to the console output.
+#enter()()
+#start()(
+	// The #print directive prints the value of the expression to the console output.
+	#print('Hello, World!')
+) 
+
+// This is a Candil program that prints 'Hello, World!' at compile time to the console output.
+#enter()(
+	// The #print directive prints the value of the expression to the console output.
+	#print('Hello, World!')
+)
+#start()()

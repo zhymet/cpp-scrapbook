@@ -1,0 +1,52 @@
+//#type [;] (;) {;} ; // This should be a valid single statement scope.
+//#type [;(];) {;} ; // This should be a syntax error dues to invalid brackets
+//#type {;[ ( ()] ) } ; // This should be a syntax error dues to invalid bracket
+
+// type_definition
+#type Int = &int;
+
+// anon_variable_definition
+#var foo;
+
+// anon_variable_definition_assingment
+#var pum = foo; // Okay but pum is a garbage value equal to foo's garbage value. Uninitialied vars are of "any" type. Value of any containing nothing is a null pointer.
+
+// Constrained Variable Definition
+#var [Int] bar;
+#var [&int[0...42]] bar;
+
+
+// variable_assingment
+//bar = foo; // Error: Attempting to implicitly convert foo(any) to Int. But foo is uninitialized;
+//bar = 1; // Error: pum's type is not Int; Pum is of type @ (any) and bar is of type Int.
+foo = 1; // Allowed because foo is of type @ (any) and bar is of type Int.
+
+
+// Void Method Definition: This method may return any type. It has no argument. same as #func[@]do_math(){}; 
+#func do_math1 {
+	#return foo+bar;
+};
+
+// Constrained Void Method Definition: This method may return any type. It has no argument. same as #func[@]do_math(){}; 
+#func [Int] do_math2 {
+	#return a + b;
+};
+
+
+// Argumentative Method Definition: This method may return any type. It has arguments.
+#func do_math3(a,b) {
+	#return a + b;
+};
+
+// Constrained Argumentative Method Definition
+#func [Int] do_math4(a,b) {
+	#return a + b;
+};
+
+// class_definition
+//#class foo {
+//	#var bar;
+//	#var baz;
+//	#var qux;
+//};
+
